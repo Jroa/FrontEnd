@@ -1,0 +1,6 @@
+/* Correr en http://codepen.io/ */
+/* CSS*/
+ol li:first-child {
+  color: red;
+}
+/* Selecciona solo el primer item de la lista*/

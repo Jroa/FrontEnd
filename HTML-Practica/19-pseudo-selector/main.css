@@ -1,0 +1,13 @@
+/* Correr en http://codepen.io/ */
+/* CSS*/
+a {
+  text-decoration: none;
+}
+/*retira el underline de todos los links*/
+
+a:hover {
+  text-decoration: underline;
+  color: darkred;
+}
+/* Un pseudo-selector es un modificador agregado al selector solo cuando determinada accion ha ocurrido*/
+/* agrega el underline y cambia el color solo cuando el mouse esta sobre el link*/

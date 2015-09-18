@@ -1,0 +1,6 @@
+/* Correr en http://codepen.io/ */
+/* CSS*/
+ul li {
+  font-size: 24px;
+}
+/*el cambio aplica solo para las etiquetas hijas de <ul>*/
