@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div class="header">
+      <!-- Reemplazamos h1 por la imagen -->
+      <!-- <h1>DUNE</h1> -->
+      <img src="images/dune-logo.jpg" alt="Dune Logo"> 
+      
+      <ul class="nav">
+        <li><a href="index.html">Principal</a></li>
+        <li><a href="argumento.html">Argumento</a></li>
+        <li><a href="personajes.html">Personajes</a></li>
+        <li><a href="bibliografia.html">Bibliografia</a></li>
+        <li><a href="sugerencia.html">Sugerencias</a></li>
+      </ul>
+      
+    </div>
+    
+    
+    <div class="main-content">
+      <!-- Se crea el formulario, en el siguiente ejemplo comienzan los cambios-->
+      <h3>Sugiere un personaje</h3>
+      
+      <form>
+        <label for="nombre-personaje">Personaje </label>
+        <input type="text" id="nombre-personaje">
+        
+        <label for="descripcion">Descripcion</label>
+        <textarea id="descripcion"></textarea>
+        
+        <label for="nombre">Tu nombre</label>
+        <input type="text" id="nombre">
+        
+        <label for="email">Tu email</label>
+        <input type="text" id="email">
+        
+        <input type="submit" value="Click to Submit">
+      </form>    
+    </div>       
+  </body>
+</html>

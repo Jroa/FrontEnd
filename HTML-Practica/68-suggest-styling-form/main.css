@@ -1,0 +1,179 @@
+html, body, h1, h2,
+h3, p, ol, ul, li a {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+/*todas las propiedades de las cajas han sido reseteadas*/
+
+body {
+  padding: 0 0 0 0;
+  /*Todas esas propiedas pueden ser acortadas con una sola propiedad*/
+  background: #5f5f5f url(images/dark_embroidery.png) top left repeat;
+  /*
+  background-color: #5f5f5f;
+  background-image: url(images/dark_embroidery.png);
+  background-position: top left;
+  background-repeat: repeat;
+  */
+}
+/*Ahora los divs manejaran el padding y ya no el body*/
+/*Siempre colocar un color de fondo en caso que la carga de la imagen falle*/
+/*obtener imagen de http://subtlepatterns.com/ */
+/*background-position indica la posicion iniciar donde empieza la imagen 
+1er valor: [top,center, bottom] 
+2do valor: [left, center, right] */
+/*background-repeat: indica si se repite o la forma en que se repite la imagen
+otros valores [repeat-x, repeat-y, no-repeat]
+*/
+
+h1 {
+  margin: 15px 0 15px 0;
+  color: #ffffff;
+  text-align: center;
+}
+/*El margin pone espacio vertical entre las etiquetas*/
+/*Coloca la letra en color claro*/
+/*Se centro la letra*/
+
+
+h2 {
+  margin: 10px 0 20px 0;
+  text-align: center;
+  color: #7facaa;
+}
+/*El margin pone especio vertical entre las etiquetas alrededor de h2*/
+/*Se centro el texto*/
+/*Se cambio el color de los encabezados*/
+
+h3 {
+  margin: 15px 0 15px 0;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 3px;
+  color: #7facaa;
+}
+/*El margin pone espacio vertical entre las etiqueas alrededor de h3 */
+/*El border-bottom traza una linea horizontal por debajo de cada tag h3*/
+/*El padding-bottom realiza una separacion entre la linea horizontal y el contenido*/
+
+ul {
+  padding: 0 0 0 50px;
+}
+
+ol {
+  padding: 0 0 0 50px;
+}
+/*Los items de las listas se encuentran alineados*/
+
+.nav {
+  padding-left: 0;
+  text-align: center;
+}
+/*se aplica a los elementos que lo invoquen*/
+/*Se centra el contenido*/
+
+.nav a{
+  color: #0000af;
+  text-decoration: none;
+}
+/*aplica a todas las etiquetas <a> que son hijos de la clase nav*/
+
+.nav li {
+  display: inline;
+}
+/*Se cambio de <ul> a .nav */      
+
+.recipes {
+  list-style-type: none;
+  padding: 0;
+}
+/*Se quita las viñetas de los items de la lista*/
+
+.recipes li{
+  border: 1px solid #b56663;
+  padding-left: 15px;
+  background: #ffffff url(images/hoffman.png) top left repeat;
+}
+/*Se agrega el borde y un padding-left de 15px*/
+/*Se agrego la imagen de fondo para los items*/
+
+.recipes h3{
+  border-bottom: 0;
+}
+/*Retira la linea que subraya los tag <h3>*/
+
+.recipes a{
+  color: #7facaa;
+  text-decoration: none;
+}
+/*Se le quita el underline a la etiqueta <a> y se aplica un color*/
+
+.recipes img{
+  float: left;
+  padding-right: 10px;
+  width: 70px;
+}
+
+.header {
+  padding: 10px 10px 10px 10px;
+  background-color: #b56663;
+}
+/*Se le quito al body el padding se creo la clase header*/
+/*Se cambio el color de fondo*/
+
+.header a{
+  color: #ffffff;
+}
+/*coloca de color claro la letra*/
+
+.header img{
+  display: block;
+  margin: 0 auto 0 auto;
+}
+/*la etiqueta tag es de tipo inline-level por lo que lo cambiamos a block*/
+/*con margin auto centramos la imagen*/
+
+.main-content {
+  width: 500px;
+  padding: 20px 20px 20px 20px;
+  border: 1px solid #dddddd;
+  margin: 30px auto 0 auto;
+  background: #ffffff url(images/dimension.png) top left repeat;
+}
+/*Se le quito al body el padding se creo la clase main-content*/
+/*Se ajusto el tamaño del width a 500px */
+/*Para centrar el contenido es necesario colocar 'auto' en left and right margin*/
+/*Se cambio de [margin: 30px 0 0 0] a [margin: 30px auto 0 auto]*/
+/*Se cambio la imagen de color de fondo*/
+
+.photos {
+  list-style-type: none;
+  padding: 0;
+}
+/*Elimina las viñetas de los items de la lista*/
+/*Elimina el espacion en el padding*/
+
+.photos li{
+  display: inline;
+  padding-left: 11px;
+}
+/*Muestra las imagenes de manera horizontal con un pequeño espacio en medio*/
+
+.featured-image {
+  width: 500px;
+  height: 400px;
+  background: #ffffff url(images/dune_by_bumhand.jpg) top left no-repeat; 
+}
+
+.featured-image h3{
+  margin: 0;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 5px 0 5px 0;
+  text-transform: uppercase;
+}
+
+/*Aqui comienza los estilos para los formularios*/
+label, input{
+  display: block;
+}
